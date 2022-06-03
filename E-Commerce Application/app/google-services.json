@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "422388972446",
+    "firebase_url": "https://ezbuy-0929-default-rtdb.firebaseio.com",
+    "project_id": "ezbuy-0929",
+    "storage_bucket": "ezbuy-0929.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422388972446:android:8129add06b90486e9db48f",
+        "android_client_info": {
+          "package_name": "com.example.ezbuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422388972446-ebtbiebugctub57aco85p3tsa673o0jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszQBI0woGqfVpIO7zdqNatKdpCxpRiW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422388972446-ebtbiebugctub57aco85p3tsa673o0jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422388972446:android:5df74cf60529ad929db48f",
+        "android_client_info": {
+          "package_name": "com.example.ezbuyapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422388972446-ebtbiebugctub57aco85p3tsa673o0jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszQBI0woGqfVpIO7zdqNatKdpCxpRiW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422388972446-ebtbiebugctub57aco85p3tsa673o0jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

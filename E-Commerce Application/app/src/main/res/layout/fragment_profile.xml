@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileFragment"
+    android:id="@+id/fragmentProfile">
+
+    <ImageView
+        android:id="@+id/imgViewProfile"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:src="@mipmap/icon_profilepic"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_ShippingDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txtViewUsername"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAN ZE KAI"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/imgViewProfile"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_ShippingDetail"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_ShippingDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewProfile"
+        app:layout_constraintBottom_toTopOf="@+id/cstLayoutProfile">
+
+        <ImageView
+            android:id="@+id/imgViewReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_local_shipping_24"
+            app:srcCompat="@drawable/ic_baseline_shopping_bag_24"
+            tools:srcCompat="@drawable/ic_baseline_local_shipping_24" />
+
+        <ImageView
+            android:id="@+id/imgViewWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_account_balance_wallet_24" />
+
+        <ImageView
+            android:id="@+id/imgViewRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_rate_24" />
+
+        <ImageView
+            android:id="@+id/imgViewShipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_shopping_bag_24" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cstLayoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_ShippingDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_AboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" >
+
+            <Button
+                android:id="@+id/btnActSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                app:icon="@drawable/ic_baseline_settings_24" />
+
+            <Button
+                android:id="@+id/btnHelpCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help Center"
+                app:icon="@drawable/ic_baseline_help_24" />
+
+            <Button
+                android:id="@+id/ChatWithEzBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat with EzBuy"
+                app:icon="@drawable/ic_baseline_chat_24" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:background="@drawable/round_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cstLayoutProfile"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
